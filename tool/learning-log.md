@@ -1,8 +1,8 @@
 # Tool Learning Log
 
-## Tool: **X**
+## Tool: **Animejs**
 
-## Project: **X**
+## Project: **Wishing Simulator**
 
 ---
 
