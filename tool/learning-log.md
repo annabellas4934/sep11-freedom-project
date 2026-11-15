@@ -20,7 +20,10 @@
         * it told me to first make a file which i did and set it up
         * for now i want to see how to get things to actually show up so i will be using the code dirrectly from the ai, this will be changed later
         * to end today i only see a sqaure with no animation so that needs to be looked at.
-
+### 11/14/2026:
+* im following the [video](https://www.youtube.com/watch?v=uRDLFXxihgc&t=113s) that Mr Mueller gave me, nothing is showing so im a bit confused
+* hey i realized to link animejs i needed to get it from deep within the other files, maybe thats what i got wrong
+    * nothing is showing with the video example but im going to try using the code on animejs website
 <!-- 
 ### 11/03/2026:
 * Text
