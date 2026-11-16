@@ -3,32 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="animepractice1.html"/>
     <title>Anime.js Quickstart</title>
     <style>
-        .square {
+        /* .square {
             width: 100px;
             height: 100px;
             background-color: #3498db;
             margin: 50px;
             border-radius: 8px;
+        } */
+        @keyframes x-animation {
+        to { transform: translateX(100cqw); }
+        }
+
+        .chiori {
+        animation: x-animation 1s cubic-bezier(0.845,0.205,0.246,0.78) forwards;
         }
     </style>
 </head>
 <body>
-
-    <div class="square"></div>
-
+<img src="chiori.jpeg" class = "chiori" >
+ <div id="selector-demo">
+    <div class="medium row">
+        <div class="chiori"></div>
+    </div>
+    <!-- <div class="square"></div>
+    <div id="selector-demo">
+    <div class="medium row">
+        <div class="square"></div>
+    </div>
+    <div class="medium row">
+        <div class="square"></div>
+    </div>
+    <div class="medium row">
+        <div class="square"></div>
+    </div>
+    </div> -->
     <!-- 1. Load the Library -->
-    <script src="node_modules/animejs/dist/bundles/anime.esm.js"></script>
+    <!-- <script src="node_modules/animejs"></script> -->
 
     <!-- 2. Run the Animation -->
     <script>
-        anime({
-            targets: '.square',
-            translateX: 250,
-            rotateZ: 360,
-            duration: 2000,
-            loop: true,
+        import { animate, cubicBezier } from 'animejs';
+
+        animate('.chiori', {
+        x: '100cqw',
+        duration: 1000,
+        ease: cubicBezier(0.845,0.205,0.246,0.78)
         });
     </script>
 </body>
