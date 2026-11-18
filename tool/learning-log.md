@@ -32,8 +32,9 @@
 
 ### 11/16/2026:
 * I MADE AN IMAGE MOVEEEE [here](animepractice1.html)
-* Instead of the bvvoxes in the example code in Animejs, i tried to replace it with an img
+* Instead of the boxes in the example code in Animejs, i tried to replace it with an img
     * i commented out the squares, the css that made the squares, and the code making the sqaures appear.
+    * i added an img and gave it a class, and made sure anything else that had a square class have the new class i made.
     
 <!-- 
 ### 11/03/2026:
