@@ -23,11 +23,23 @@
     </style>
 </head>
 <body>
+    
 <img src="chiori.jpeg" class = "chiori" >
  <div id="selector-demo">
     <div class="medium row">
         <div class="chiori"></div>
     </div>
+    <!-- <div class="medium row">
+  <div class="square"></div>
+</div>
+<div class="medium row">
+  <div class="square"></div>
+</div>
+<div class="medium row">
+  <fieldset class="controls">
+    <button class="button play">Play</button>
+  </fieldset>
+</div> -->
     <!-- <div class="square"></div>
     <div id="selector-demo">
     <div class="medium row">
@@ -45,13 +57,36 @@
 
     <!-- 2. Run the Animation -->
     <script>
-        import { animate, cubicBezier } from 'animejs';
-
+        import { animate, cubicBezier, createTimeline } from 'animejs';
+        const timeline = createTimeline(parameters);
+        .label('start', 0)
+        .add('.chiori', {
+        x: '15',
+        duration: 1,
+        }, 500)
         animate('.chiori', {
-        x: '100cqw',
-        duration: 1000,
+        x: 100,
+        y: 100,
+        duration: 100,
         ease: cubicBezier(0.845,0.205,0.246,0.78)
+        
         });
+        // import { animate, utils, stagger } from 'animejs';
+
+        // const [ $playButton ] = utils.$('.play');
+
+        // const animation = animate('.square', {
+        // x: '17rem',
+        // ease: 'inOutSine',
+        // delay: stagger(100),
+        // autoplay: false, // The animation is paused by default
+        // });
+
+        // const playAnimation = () => animation.play();
+
+        // $playButton.addEventListener('click', playAnimation);
+        // .add('.circle', { x: '15rem' }, 'start')
+        // .add('.triangle', { x: '15rem', rotate: '1turn' }, '<-=500');
     </script>
 </body>
 </html>

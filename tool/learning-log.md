@@ -35,6 +35,11 @@
 * Instead of the boxes in the example code in Animejs, i tried to replace it with an img
     * i commented out the squares, the css that made the squares, and the code making the sqaures appear.
     * i added an img and gave it a class, and made sure anything else that had a square class have the new class i made.
+
+### 11/22/2026:
+*  im trying to see if i could add a duration for the animation on the img since it goes off screen
+    * im trying this by using [timelines](https://animejs.com/documentation/timeline)
+    * this also helps me see how to combine things
     
 <!-- 
 ### 11/03/2026:
